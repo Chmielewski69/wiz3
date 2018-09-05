@@ -16,14 +16,24 @@
 <body>
 	<div class="parallax">
 	</div>
-	<nav class="topnav">
-		<a  class="btn"  onclick="scroll_to('#omnie');">O mnie</a>
-		<a  class="btn"  onclick="scroll_to('#mojapraca');">Moja praca</a>
-		<a  class="btn"  onclick="scroll_to('#galeria');">Galeria</a>
-		<a class="btn"  onclick="scroll_to('#oferta');">Oferta</a>
-		<a class="btn"  onclick="scroll_to('#kontakt');">Kontakt</a>
-		<a class="btn"  onclick="scroll_to('#znajomi');">Znajomi</a>
-	</nav>
+		<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a  onclick="scroll_to('#omnie'), closeNav();">O mnie</a>
+			  <a  onclick="scroll_to('#mojapraca'), closeNav();">Moja praca</a>
+			  <a  onclick="scroll_to('#galeria'), closeNav();">Galeria</a>
+			  <a  onclick="scroll_to('#oferta'), closeNav();">Oferta</a>
+			  <a  onclick="scroll_to('#kontakt'), closeNav();">Kontakt</a>
+			  <a  onclick="scroll_to('#znajomi'), closeNav();">Znajomi</a>
+		</div>
+		<span class="resnav"style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+		<nav class="topnav">
+			<a  class="btn"  onclick="scroll_to('#omnie');">O mnie</a>
+			<a  class="btn"  onclick="scroll_to('#mojapraca');">Moja praca</a>
+			<a  class="btn"  onclick="scroll_to('#galeria');">Galeria</a>
+			<a class="btn"  onclick="scroll_to('#oferta');">Oferta</a>
+			<a class="btn"  onclick="scroll_to('#kontakt');">Kontakt</a>
+			<a class="btn"  onclick="scroll_to('#znajomi');">Znajomi</a>
+		</nav>
 <div class="container-fluid">
 	<div class="row">
 	<div class="col-12 col-lg-6" >
@@ -56,7 +66,7 @@
 					</div>
 			</div>
 			<div class="bigbrick1" id="galeria">
-				<div class="col-12">
+				<div class="col-12" style="padding: 0;">
 				<div class="raw">
 					 <div class="column">
 						<img src="galeria/zdj13.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
@@ -256,6 +266,15 @@ $(document).ready(function(){
         $("#ofertabox").fadeToggle(1000);
     });
 });
+</script>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>

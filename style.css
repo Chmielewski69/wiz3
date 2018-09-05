@@ -88,6 +88,56 @@ h1
 }
 @media screen and (min-width: 544px)
 {
+.resnav
+	{
+		display: none;
+	}
+	.sidenav
+	{
+		display: none;
+	}
+	.topnav {
+	position: fixed;
+    z-index: 100;
+	top: 0;
+	left: 0;
+	color: white;
+    background-color: 	rgb(13, 13, 13, 0.6);
+    display: inline-block;
+	border-radius: 0 0 10px 0;
+	
+	
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+	
+}
+
+
+.topnav a:hover {
+    background-color: #4caf50;
+    color: black;
+}
+.btn {
+	 display: inline-block;
+    border: none;
+	
+    outline: none;
+    padding: 10px 16px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+.active, .btn:hover {
+    background-color: #666;
+    color: black;
+}
 .smbrick1
 {
 	display: flex;
@@ -116,7 +166,49 @@ h1
 }
 @media screen and (max-width: 544px)
 {
-	.smbrick1
+	
+.topnav
+{
+	display: none;
+}	
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+	color: white;
+	
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}	
+.smbrick1
 {
 	display: flex;
 	flex-direction: column;
@@ -197,48 +289,7 @@ h1
 }
 
 
-.topnav {
-	position: fixed;
-    z-index: 100;
-	top: 0;
-	left: 0;
-	color: white;
-    background-color: 	rgb(13, 13, 13, 0.6);
-    display: inline-block;
-	border-radius: 0 0 10px 0;
-	
-	
-}
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-	
-}
 
-
-.topnav a:hover {
-    background-color: #4caf50;
-    color: black;
-}
-.btn {
-	 display: inline-block;
-    border: none;
-	
-    outline: none;
-    padding: 10px 16px;
-    color: white;
-    cursor: pointer;
-    font-size: 18px;
-}
-.active, .btn:hover {
-    background-color: #666;
-    color: black;
-}
 .name
 {
 	width: 28%;

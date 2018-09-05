@@ -114,7 +114,7 @@ h1
 	border: 0;
 }
 }
-@media screen and (min-width: 544px)
+@media screen and (max-width: 544px)
 {
 	.smbrick1
 {
@@ -263,8 +263,8 @@ h1
 	
 }
 
-
-
+@media screen and (min-width: 544px)
+{
 .column {
     
     width: 25%;
@@ -283,7 +283,17 @@ h1
 .column img:hover {
     opacity: 1;
 }
-
+}
+@media screen and (max-width: 544px)
+{
+	.column {
+    
+    width: 50%;
+	
+    padding: 5px;
+	display: inline-block;
+}
+}
 /* Clear floats after the columns */
 .raw
 {	

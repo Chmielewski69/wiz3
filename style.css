@@ -78,6 +78,45 @@ h1
 	flex-direction: column;
 	justify-content: center;
 }
+
+	.oferty
+{
+	border-radius: 5px;
+	background-color: rgba(85,85,85,0);
+	margin: auto;
+	margin-bottom: 10px;
+	width: 100%;
+    overflow-x: scroll;
+	overflow-y: hidden;
+    white-space: nowrap;
+	
+}
+.oferty::-webkit-scrollbar
+{
+	height: 7px;
+}
+.oferty::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: darkgray;
+}
+.oferty::-webkit-scrollbar-thumb
+{
+	background-color: #4caf50;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.wersja
+{
+	display: inline-block;
+	margin: 10px; 	
+	background-color: gray;
+	
+}
+.wersja img{
+border-radius: 5px;
+
+}
 .bigbrick
 {
 	width: 99%;
@@ -419,13 +458,17 @@ h1
 #ofertabox
 {
 	display:none;
-	height: 10vh;
+	
+	flex-direction: row;
 	background-color: gray;
     border: none;
     color: white;
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
+}
+#ofertabox[style*="display: block"] {
+  display: flex !important;
 }
 .footer 
 {

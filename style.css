@@ -105,6 +105,14 @@ h1
 	width: 49%;
 	
 }
+#map
+{
+	
+	height: 320px;
+	display: inline-block;
+	width: 90%;
+	border: 0;
+}
 }
 @media screen and (min-width: 544px)
 {
@@ -124,6 +132,14 @@ h1
 	
 	width: 100%;
 	
+}
+#map
+{
+	
+	height: 320px;
+	display: inline-block;
+	width: 100%;
+	border: 0;
 }
 }
 .smbrick
@@ -248,14 +264,7 @@ h1
 }
 
 
-#map
-{
-	
-	height: 320px;
-	display: inline-block;
-	width: 90%;
-	border: 0;
-}
+
 .column {
     
     width: 25%;

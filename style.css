@@ -86,6 +86,8 @@ h1
 	height: 50vh;
 	
 }
+@media screen and (min-width: 544px)
+{
 .smbrick1
 {
 	display: flex;
@@ -94,6 +96,35 @@ h1
 	background-color: rgba(0,0,0,0);
 	margin: 10px;
 	
+}
+.box
+{
+	
+	text-align: center;
+	display: inline-block;
+	width: 49%;
+	
+}
+}
+@media screen and (min-width: 544px)
+{
+	.smbrick1
+{
+	display: flex;
+	flex-direction: column;
+	width: 99%;
+	background-color: rgba(0,0,0,0);
+	margin: 10px;
+	
+}
+.box
+{
+	
+	text-align: center;
+	
+	width: 100%;
+	
+}
 }
 .smbrick
 {
@@ -203,14 +234,7 @@ h1
 	z-index: 100;
 	
 }	
-.box
-{
-	
-	text-align: center;
-	display: inline-block;
-	width: 49%;
-	
-}
+
 .kontaktbox
 {
 	

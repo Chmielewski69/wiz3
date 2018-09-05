@@ -1,0 +1,414 @@
+body::-webkit-scrollbar
+{
+	width: 10px;
+}
+body::-webkit-scrollbar-track-piece
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: transparent;
+}
+body::-webkit-scrollbar-thumb
+{
+	
+	background-color: darkgray;
+	border-radius: 10px;
+}
+body, html
+{ 
+margin: 0px !important;
+width: 100%;
+height: 100%;
+}
+
+h1
+{
+	text-align: center;
+}
+.parallax
+{
+	
+	background: url('start3.jpg');
+
+    /* Full height */
+    height: 100%; 
+	
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	top: 0;
+}
+.container
+{
+	margin: auto;
+	width:100%;
+	display: table;
+}
+.content
+{
+	
+	width: 100%;
+	
+}
+
+.brick
+{
+	width: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.bigbrick1
+{
+	width: 99%;
+	background-color: rgba(0,0,0,0);
+	margin: 10px;
+	text-align: justify;
+	font: sans-serif;
+	
+	
+}
+#galeria
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.bigbrick
+{
+	width: 99%;
+	background-color: darkgray;
+	margin: 10px;
+	height: 50vh;
+	
+}
+.smbrick1
+{
+	display: flex;
+	flex-direction: row;
+	width: 99%;
+	background-color: rgba(0,0,0,0);
+	margin: 10px;
+	
+}
+.smbrick
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 99%;
+	
+	margin: 10px;
+	height: 20vh;
+}
+.smbrick > .social:nth-of-type(1){background-color: #3b5998;}
+.smbrick > .social:nth-of-type(2){background-color: #0077B5;margin-left: 5px;}
+.smbrick > .social:nth-of-type(3){background-color: #d34836;margin-left: 5px;}
+.smbrick > .social:nth-of-type(1){background-image: url('facebook-logo.png'); background-position: center; background-repeat: no-repeat;}
+.smbrick > .social:nth-of-type(2){background-image: url('linkedin-logo.png'); background-position: center; background-repeat: no-repeat;}
+.smbrick > .social:nth-of-type(3){background-image: url('google-plus.png'); background-position: center; background-repeat: no-repeat;}
+
+.row
+{
+	width: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	
+}
+.row img
+{
+	width: 100%;
+	transition: transform 0.5s ease-in-out;
+}
+.row img:nth-of-type(1){width: 30%;}
+#znajomi
+{
+	text-align: center;
+	color: white;
+	border-radius: 5px;
+	background-color: rgb(0.8);
+	width: 70%;
+	margin: auto;
+	margin-bottom: 10px;
+	float: left;
+}
+
+#znajomi figure:hover
+{
+	-webkit-filter: brightness(0.4);
+	-moz-filter: brightness(0.4);
+	-o-filter: brightness(0.4);
+	-ms-filter: brightness(0.4);
+	filter: brightness(0.4);
+}
+
+
+.topnav {
+	position: fixed;
+    z-index: 100;
+	top: 0;
+	left: 0;
+	color: white;
+    background-color: 	rgb(13, 13, 13, 0.6);
+    display: inline-block;
+	border-radius: 0 0 10px 0;
+	
+	
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+	
+}
+
+
+.topnav a:hover {
+    background-color: #4caf50;
+    color: black;
+}
+.btn {
+	 display: inline-block;
+    border: none;
+	
+    outline: none;
+    padding: 10px 16px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+.active, .btn:hover {
+    background-color: #666;
+    color: black;
+}
+.name
+{
+	width: 28%;
+	background-color: #ddd;
+   text-align: center;
+	
+	display: inline-block;
+	top: 0;
+	z-index: 100;
+	
+}	
+.box
+{
+	
+	text-align: center;
+	display: inline-block;
+	width: 49%;
+	
+}
+.kontaktbox
+{
+	
+	width: 100%;
+	background-color: rgba(225, 227, 228,0.1);
+	
+	display: inline-block;
+	text-align: center;
+	text-indent: 0px;
+	
+}
+
+
+#map
+{
+	
+	height: 320px;
+	display: inline-block;
+	width: 90%;
+	border: 0;
+}
+.column {
+    
+    width: 25%;
+    padding: 10px;
+	display: inline-block;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+	
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.raw
+{	
+	
+	display: inline-block;
+	margin: auto;
+	margin-bottom: 10px;
+	width: 90%;
+	 overflow-x: scroll;
+	overflow-y: hidden;
+    white-space: nowrap;
+}
+.raw:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.raw::-webkit-scrollbar
+{
+	height: 7px;
+}
+.raw::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: darkgray;
+}
+.raw::-webkit-scrollbar-thumb
+{
+	background-color: #4caf50;
+	border-radius: 10px;
+}
+/* The expanding image container */
+.conteiner {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+.btn1 {
+    background-color: darkgray;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+	outline: none;
+	
+	border: none;
+}
+
+/* Darker background on mouse-over */
+.btn1:hover {
+    background-color: gray;
+}
+#ofertabox
+{
+	display:none;
+	height: 10vh;
+	background-color: gray;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.footer 
+{
+	width: 100%;
+	text-align: center;
+    text-decoration: none;
+	float: left;
+	
+}
+.footer >a
+{
+	color: black;
+	text-decoration: none;
+}
+.social
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	height: 10vh;
+	width: 10%;
+	
+	border-radius: 5px;
+	transition: 0,5s ease-in-out;
+	text-align: center;
+	
+}
+.social:hover
+{
+	transform: scale(1.1) ;
+	
+}
+.social p
+{
+	position: relative;
+	transform: translateY(-50%);
+	top: 50%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: arial;
+  background-color: darkgray;
+}
+.title {
+  color: grey;
+  font-size: 18px;
+}
+.card img
+{
+
+}
+.card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #4caf50;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  
+}
+.card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.card button:hover, a:hover {
+  opacity: 0.7;
+}
+h5
+{
+	text-align: center;
+	margin: 5px;
+}
